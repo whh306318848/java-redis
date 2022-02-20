@@ -3,11 +3,15 @@ package com.kuang;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kuang.pojo.User;
+import com.kuang.utils.RedisUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @SpringBootTest
 class Redis02SpringbootApplicationTests {
@@ -15,6 +19,9 @@ class Redis02SpringbootApplicationTests {
 	@Autowired
 	@Qualifier("redisTemplate")
 	private RedisTemplate redisTemplate;
+
+	@Autowired
+	private RedisUtils redisUtils;
 
 	@Test
 	void contextLoads() {
@@ -48,5 +55,18 @@ class Redis02SpringbootApplicationTests {
 		String jsonUser = new ObjectMapper().writeValueAsString(user);
 		redisTemplate.opsForValue().set("user", user);
 		System.out.println(redisTemplate.opsForValue().get("user"));
+	}
+
+	@Test
+	public void test2() {
+//		redisUtils.set("age", 1);
+//		redisUtils.decr("age", 2);
+//		System.out.println(redisUtils.incr("age", 1));
+
+		Set<String> set = new HashSet<>();
+		set.add("c");
+		set.add("d");
+		System.out.println(redisUtils.sSet("set", set));
+		redisUtils.lLeftPop("a");
 	}
 }
