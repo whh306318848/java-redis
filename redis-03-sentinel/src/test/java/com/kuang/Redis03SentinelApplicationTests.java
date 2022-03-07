@@ -15,8 +15,8 @@ class Redis03SentinelApplicationTests {
 
 	@Test
 	void contextLoads() {
-//		redisTemplate.opsForValue().set("mykey", "kuangshen");
-		System.out.println(redisTemplate.opsForValue().get("k1"));
+		redisTemplate.opsForValue().set("mykey", "kuangshen");
+		System.out.println(redisTemplate.opsForValue().get("mykey"));
 	}
 
 }
