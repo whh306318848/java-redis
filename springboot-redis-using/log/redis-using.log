@@ -380,3 +380,22 @@ redis.clients.jedis.exceptions.JedisDataException: WRONGPASS invalid username-pa
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
 
+2022-03-07 22:55:17.900  INFO 3944 --- [main] com.xue.study.RedisUsingStart            : Starting RedisUsingStart on DESKTOP-DU9LSVV with PID 3944 (E:\Code\JavaWeb\java-redis\springboot-redis-using\target\classes started by wuhaohua in E:\Code\JavaWeb\java-redis)
+2022-03-07 22:55:17.905  INFO 3944 --- [main] com.xue.study.RedisUsingStart            : No active profile set, falling back to default profiles: default
+2022-03-07 22:55:18.456  INFO 3944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-07 22:55:18.458  INFO 3944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-03-07 22:55:18.481  INFO 3944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2022-03-07 22:55:18.857  INFO 3944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-07 22:55:18.880  INFO 3944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-07 22:55:18.881  INFO 3944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-03-07 22:55:18.972  INFO 3944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-07 22:55:18.972  INFO 3944 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1026 ms
+2022-03-07 22:55:19.025  INFO 3944 --- [main] com.xue.study.config.RedisConfigReader   : redis config is :RedisConfig(database=0, host=192.168.76.128, port=6379, password=123456, timeout=20000, pool=RedisConfig.Pool(maxActive=8, minIdle=0, maxIdle=8, maxWait=-1))
+2022-03-07 22:55:19.063  INFO 3944 --- [main] com.xue.study.config.RedisConfigReader   : redis config is :RedisConfig(database=0, host=192.168.76.128, port=6380, password=123456, timeout=20000, pool=RedisConfig.Pool(maxActive=8, minIdle=0, maxIdle=8, maxWait=-1))
+2022-03-07 22:55:19.203  INFO 3944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-07 22:55:19.477  INFO 3944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-07 22:55:19.478  INFO 3944 --- [main] com.xue.study.RedisUsingStart            : Started RedisUsingStart in 1.998 seconds (JVM running for 3.118)
+2022-03-07 22:55:19.480  INFO 3944 --- [main] RedisUsingStart                          : ### welcome to springboot-redis-using ###
+2022-03-07 22:55:26.730  INFO 3944 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-07 22:55:26.731  INFO 3944 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-07 22:55:26.735  INFO 3944 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
